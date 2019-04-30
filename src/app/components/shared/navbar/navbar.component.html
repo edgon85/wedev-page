@@ -10,7 +10,7 @@
 </section>
 <nav class="navbar sticky-top navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" [routerLink]="['/inicio']">
             <img src="assets/images/logo_wedev.png" alt="" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +20,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">desarrollo web <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" [routerLink]="['/sitios-web']">desarrollo web <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">social media</a>
+                    <a class="nav-link" [routerLink]="['/social-media']">social media</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#">desrrollo movil</a>
