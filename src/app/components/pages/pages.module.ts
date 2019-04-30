@@ -5,12 +5,14 @@ import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 import { PagesComponent } from './pages.component';
 import { WebSitesComponent } from './web-sites/web-sites.component';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     PagesComponent,
-    WebSitesComponent
+    WebSitesComponent,
+    SocialMediaComponent
   ],
   imports: [
     SharedModule,
@@ -18,7 +20,8 @@ import { WebSitesComponent } from './web-sites/web-sites.component';
   ],
   exports: [
     PagesComponent,
-    WebSitesComponent
+    WebSitesComponent,
+    SocialMediaComponent
   ]
 })
 export class PagesModule { }
