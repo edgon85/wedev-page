@@ -6,13 +6,15 @@ import { PAGES_ROUTES } from './pages.routes';
 import { PagesComponent } from './pages.component';
 import { WebSitesComponent } from './web-sites/web-sites.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     PagesComponent,
     WebSitesComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    PortfolioComponent
   ],
   imports: [
     SharedModule,
@@ -21,7 +23,8 @@ import { SocialMediaComponent } from './social-media/social-media.component';
   exports: [
     PagesComponent,
     WebSitesComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    PortfolioComponent
   ]
 })
 export class PagesModule { }
