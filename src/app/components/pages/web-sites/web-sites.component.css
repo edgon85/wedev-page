@@ -1,0 +1,108 @@
+.features {
+    background: #fff;
+}
+
+.features .inner-top {
+    padding-top: 100px;
+}
+
+.features .inner-top header h1 {
+    font-family: "lato", sans-serif;
+    font-size: 44px;
+    line-height: 130%;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #506a85;
+}
+
+.features .inner-top header p {
+    font-size: 22px;
+    line-height: 150%;
+}
+
+.features .inner-top-sm {
+    padding-top: 80px;
+}
+
+.features .inner-top-sm h2 {
+    font-family: "lato", sans-serif;
+    font-size: 26px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #506a85;
+}
+
+.features .inner-top-sm .text-small {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.features .inner-top-sm .inner-left-xs {
+    padding-left: 30px;
+}
+
+.features .inner-top-sm .inner-left-xs .image {
+    width: 100%;
+}
+
+.features .inner-top-sm .inner-left-xs .image img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.services {
+    background: #f2f5f7;
+}
+
+.services .inner-top {
+    padding-top: 120px;
+}
+
+.services .inner-bottom-sm {
+    padding-bottom: 80px;
+}
+
+.services .inner-bottom-sm header h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #506a85;
+    margin-top: 0;
+}
+
+.services .inner-bottom-sm .inner-top-sm {
+    padding-top: 80px;
+}
+
+.services .inner-bottom-sm .inner-top-sm .inner-bottom-xs {
+    padding-bottom: 5px;
+}
+
+.services .inner-bottom-sm .inner-top-sm .inner-bottom-xs .icon {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.services .inner-bottom-sm .inner-top-sm .inner-bottom-xs .icon .icn {
+    font-size: 85px;
+    color: #ffa800;
+    line-height: 100%;
+}
+
+.services .inner-bottom-sm .inner-top-sm .inner-bottom-xs h2 {
+    font-size: 26px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #506a85;
+    margin-top: 0;
+}
+
+.services .inner-bottom-sm .inner-top-sm .inner-bottom-xs .text-small {
+    margin-top: -5px;
+    font-size: 16px;
+    line-height: 160%;
+}
