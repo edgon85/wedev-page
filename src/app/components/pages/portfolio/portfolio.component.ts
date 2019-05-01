@@ -15,4 +15,8 @@ export class PortfolioComponent implements OnInit {
     init_plugins();
   }
 
+  detalle() {
+    console.log('detalle');
+  }
+
 }

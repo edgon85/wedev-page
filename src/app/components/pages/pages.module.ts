@@ -8,6 +8,7 @@ import { WebSitesComponent } from './web-sites/web-sites.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { PortfolioDetailComponent } from './portfolio/portfolio-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     WebSitesComponent,
     SocialMediaComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    PortfolioDetailComponent
   ],
   imports: [
     SharedModule,
@@ -27,7 +29,8 @@ import { ContactComponent } from './contact/contact.component';
     WebSitesComponent,
     SocialMediaComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    PortfolioDetailComponent
   ]
 })
 export class PagesModule { }
