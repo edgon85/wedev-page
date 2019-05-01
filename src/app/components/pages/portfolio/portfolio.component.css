@@ -1,0 +1,128 @@
+.light-bg {
+    background: #f2f5f7;
+    padding-top: 100px;
+}
+
+.light-bg .gallery-title {
+    font-size: 36px;
+    color: #506a85;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
+
+.light-bg .gallery p {
+    font-size: 22px;
+    line-height: 150%;
+    margin-bottom: 70px;
+}
+
+.light-bg .gallery p:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.light-bg .filter-button {
+    font-size: 18px;
+    border: 1px solid #e6e9ed;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    color: #506a85;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.light-bg .filter-button:hover {
+    font-size: 18px;
+    text-align: center;
+    border-color: #ffa800;
+    color: #ffa800;
+}
+
+.light-bg .gallery_product {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.light-bg .gallery_product .text-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    z-index: 100;
+    padding: 25%;
+    color: transparent;
+    width: 92.5%;
+}
+
+.light-bg .gallery_product .text-overlay:hover {
+    background: rgba(255, 168, 0, 0.8);
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.light-bg .gallery_product .text-overlay:hover .info {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.light-bg .gallery_product .text-overlay:hover .info h4 {
+    margin-bottom: 2px;
+    font-size: 20px;
+    line-height: 150%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.light-bg .gallery_product img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.clients {
+    background: #fff;
+}
+
+.clients .inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.clients .inner header h1 {
+    font-size: 44px;
+    line-height: 130%;
+    margin-bottom: 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #506a85;
+    margin-top: 0;
+}
+
+.clients .inner header p {
+    font-size: 22px;
+    line-height: 150%;
+}
