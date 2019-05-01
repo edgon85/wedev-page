@@ -65,6 +65,12 @@
     width: 92.5%;
 }
 
+.light-bg .gallery_product .text-overlay .info h4 {
+    color: transparent !important;
+}
+
+.light-bg .gallery_product .text-overlay .info h4:hover {}
+
 .light-bg .gallery_product .text-overlay:hover {
     background: rgba(255, 168, 0, 0.8);
     cursor: pointer;
@@ -92,6 +98,7 @@
     margin-bottom: 2px;
     font-size: 20px;
     line-height: 150%;
+    color: #fff !important;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
