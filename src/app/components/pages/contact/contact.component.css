@@ -1,0 +1,106 @@
+.contact {
+    background: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact .inner header h1 {
+    font-size: 44px;
+    line-height: 130%;
+    margin-bottom: 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #506a85;
+    margin-top: 0;
+}
+
+.contact .inner header p {
+    font-size: 22px;
+    line-height: 150%;
+}
+
+.contact .inner .outer-top-md {
+    margin-top: 100px;
+}
+
+.contact .inner .inner-right-sm {
+    padding-right: 45px;
+}
+
+.contact .inner .inner-right-sm h2 {
+    font-size: 26px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #506a85;
+    margin-top: 0;
+}
+
+.contact .inner .inner-right-sm .forms textarea.form-control {
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    height: 100px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #73879c;
+    resize: none;
+    vertical-align: middle;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #f5f5f5;
+    border: 1px solid #e6e9ed;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+}
+
+.contact .inner .inner-right-sm .forms .btn-submit {
+    background: #ffa800;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 11px 20px 13px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-shadow: none;
+    border-bottom: 2px solid #fabe47;
+}
+
+.contact .inner .inner-right-sm .forms .btn-submit:hover {
+    background: #fabe47;
+}
+
+.contact .inner .inner-left-sm {
+    padding-left: 45px;
+}
+
+.contact .inner .border-left {
+    border-left: 1px solid #dee2e6;
+}
+
+.contact .inner .border-left .contacts {
+    list-style: none;
+    position: relative;
+}
+
+.contact .inner .border-left .contacts .fas {
+    margin-right: 5px;
+}
+
+.contact .inner .border-left .contacts a {
+    text-decoration: none;
+    color: #73879c;
+}
+
+.contact .inner .border-left .contacts a .far {
+    margin-right: 5px;
+}
