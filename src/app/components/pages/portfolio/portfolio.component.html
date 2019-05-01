@@ -1,5 +1,6 @@
 <section class="light-bg">
     <div class="container">
+        
         <div class="row">
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1 class="gallery-title">Nuestro trabajo</h1>
@@ -28,17 +29,22 @@
         </button>
             </div>
         </div>
+        
         <div class="row">
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web">
-                <figcaption class="text-overlay" (click)="detalle()">
+            <ng-container *ngFor="let item of portafolios">
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter {{item.filtro}} " >
+                <figcaption class="text-overlay" (click)="detalle(item.slug)">
                     <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
+                        <h4>{{item.title}}</h4>
+                        <p>{{item.category}}</p>
                     </div>
                 </figcaption>
-                <img src="assets/images/portafolio/web01.png" />
-            </div>
-
+                <img [src]="item.cover || 'assets/images/portafolio/social01.jpg' || ''" />
+            </div> 
+            </ng-container>
+            
+            
+<!-- 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
                 <figcaption class="text-overlay">
                     <div class="info">
@@ -137,8 +143,9 @@
                     </div>
                 </figcaption>
                 <img src="assets/images/portafolio/web02.png" />
-            </div>
+            </div> -->
         </div>
+
     </div>
 </section>
 

@@ -9,6 +9,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioDetailComponent } from './portfolio/portfolio-detail.component';
+import { KeysPipe } from '../../pipes/keys.pipe';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,13 @@ import { PortfolioDetailComponent } from './portfolio/portfolio-detail.component
     SocialMediaComponent,
     PortfolioComponent,
     ContactComponent,
-    PortfolioDetailComponent
+    PortfolioDetailComponent,
+    KeysPipe,
   ],
   imports: [
     SharedModule,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+    CommonModule
   ],
   exports: [
     PagesComponent,
