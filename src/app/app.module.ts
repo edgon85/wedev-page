@@ -7,6 +7,12 @@ import { APP_ROUTING } from './app.routes';
 
 import { PagesModule } from './components/pages/pages.module';
 
+// Angularfire
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +21,8 @@ import { PagesModule } from './components/pages/pages.module';
     APP_ROUTING,
     BrowserModule,
     PagesModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
