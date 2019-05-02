@@ -94,12 +94,27 @@
     margin-bottom: 0;
 }
 
+.social .inner-top .inner-top-sm .tabs-2-big-top .etabs .tab .a {
+    display: block;
+    padding: 35px;
+    color: #506a85;
+    opacity: 0.5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social .inner-top .inner-top-sm .tabs-2-big-top .etabs .tab .a .text-small {
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 0;
+}
+
 .social .inner-top .inner-top-sm .tabs-2-big-top .etabs .tab:hover {
     background: #f7f9fa;
     border-color: #e6ebf0;
 }
 
-.social .inner-top .inner-top-sm .tabs-2-big-top .etabs .tab:hover a {
+.social .inner-top .inner-top-sm .tabs-2-big-top .etabs .tab:hover .a {
     opacity: 1;
 }
 
@@ -127,6 +142,11 @@
     border-color: #e1e7ed;
 }
 
+.social .inner-top .inner-top-sm .tabs-2-big-top .etabs .active:hover {
+    background: #fff;
+    border-color: #e1e7ed;
+}
+
 .social .inner-top .inner-top-sm .tabs-2-big-top .etabs .active:before {
     border-top-color: #e1e7ed;
 }
@@ -135,7 +155,8 @@
     border-top-color: #fff;
 }
 
-.social .inner-top .inner-top-sm .tabs-2-big-top .etabs .active a {
+
+.social .inner-top .inner-top-sm .tabs-2-big-top .etabs .active .a {
     opacity: 1;
 }
 
@@ -188,7 +209,7 @@
 /* servicios */
 
 .services {
-    background: #f2f5f7;
+    background: #fff;;
 }
 
 .services .inner-top {

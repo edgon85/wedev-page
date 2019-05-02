@@ -5,7 +5,7 @@
                 <header>
                     <h1>Social Media</h1>
                     <p>
-                        Nuestro trabajo es conectar con la gente, interactuar con ellas de una forma que les deje mejor que las encontramos, más capaces de llegar a donde quieren ir
+                        Nuestro trabajo es conectar con la gente, interactuar con ellas de una forma que les deje mejor que las encontramos, más capaces de llegar a donde quieren ir <br> – Seth Godin
                     </p>
                 </header>
             </div>
@@ -14,38 +14,29 @@
             <div class="col-12">
                 <div class="tabs tabs-2-big-top tab-container">
                     <ul class="etabs text-center">
-                        <li class="tab active">
-                            <a href="#tab-1">
+                        <li [ngClass]="resultados ? 'active': ''" class="tab">
+                            <div class="a" (click)="monitorizacionResultados()">
                                 <h3>Monitorización de resultados</h3>
                                 <p class="text-small">
                                     Mida el alcance de sus acciones de inmediato, determine su impacto real a través de las métricas y ajuste sus objetivos según los resultados para alcanzar sus metas empresariales
                                 </p>
-                            </a>
+                            </div>
                         </li>
-                        <li class="tab">
-                            <a href="#tab-2">
-                                <h3>Notoriedad de la marca</h3>
-                                <p class="text-small">
-                                    Aumente el reconocimiento de su marca con una presencia online para fidelizar con los usuarios. Aproveche el nicho digital, una gran parte de sus clientes potenciales posee un perfil en redes sociales.
-                                </p>
-                            </a>
+                        <li [ngClass]="marca ? 'active': ''" class="tab">
+                                <div class="a" (click)="notoriedadMarca()">
+                                    <h3>Notoriedad de la marca</h3>
+                                    <p class="text-small">
+                                        Aumente el reconocimiento de su marca con una presencia online para fidelizar con los usuarios. Aproveche el nicho digital, una gran parte de sus clientes potenciales posee un perfil en redes sociales.
+                                    </p>
+                                </div>
                         </li>
                     </ul>
                     <div class="panel-container screen-container">
-                        <div class="tab-content" id="tab-1">
+                        <div class="tab-content">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="image">
-                                        <img src="assets/images/social-media/photograph01-lg.jpg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-content" id="tab-2">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="image">
-                                        <img src="assets/images/social-media/work14-lg.jpg" alt="" />
+                                        <img [src]='"assets/images/social-media/"+imgResultados+".jpg"' alt="" />
                                     </div>
                                 </div>
                             </div>

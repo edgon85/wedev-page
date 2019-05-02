@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { timingSafeEqual } from 'crypto';
 
 @Component({
   selector: 'app-social-media',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./social-media.component.css']
 })
 export class SocialMediaComponent implements OnInit {
+  resultados = true;
+  marca = false;
 
-  constructor() { }
+  imgResultados = '01';
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  monitorizacionResultados() {
+    this.resultados = true;
+    this.marca = false;
+    this.imgResultados = '01';
+
   }
+
+  notoriedadMarca() {
+    this.resultados = false;
+    this.marca = true;
+    this.imgResultados = '02';
+  }
+
 
 }
