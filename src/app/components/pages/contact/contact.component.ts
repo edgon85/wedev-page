@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare let swal: any;
+
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +12,10 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  sendInfo() {
+    swal('Mensaje enviado', 'Pronto estaremos en contacto con usted!', 'success');
   }
 
 }

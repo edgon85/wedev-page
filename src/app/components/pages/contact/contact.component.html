@@ -16,12 +16,12 @@
                         <form class="forms">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="nombre (Requerido)" />
+                                    <input type="text" name="name" class="form-control" placeholder="nombre (requerido)" required/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="email" name="email" class="form-control" placeholder="Email (requerido)" />
+                                    <input type="email" name="email" class="form-control" placeholder="correo (requerido)" required/>
                                 </div>
                             </div>
                             <div class="row">
@@ -34,7 +34,7 @@
                                     <textarea name="message" class="form-control" placeholder="Ingrese un mensaje ..."></textarea>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-submit"> Enviar mesaje </button>
+                            <button type="button" class="btn btn-submit" (click)="sendInfo()"> Enviar mesaje </button>
                         </form>
                         <div id="response"></div>
                     </div>
@@ -43,16 +43,16 @@
                         <p>
                             Descubra cómo las herramientas digitales pueden ayudarlo a alcanzar el siguiente nivel en su empresa.
                         </p>
-                        <h3>WeDEv</h3>
+                        <h3>WeDev</h3>
                         <ul class="contacts">
                             <li>
-                                <i class="fas fa-mobile-alt"></i> +(502) 34753800
+                                <a href="tel:+(502)34753800"><i class="fas fa-mobile-alt"></i> +(502) 34753800</a>
                             </li>
                             <li>
-                                <i class="fas fa-mobile-alt"></i> +(502) 58327385
+                                <a href="tel:+(502)58327385"> <i class="fas fa-mobile-alt"></i> +(502) 58327385</a>
                             </li>
                             <li>
-                                <a href="mailto:info@wedevgt.com"><i class="far fa-envelope"></i> info@wedevgt.com</a>
+                                <a href="mailto:contacto@wedevgt.com"><i class="far fa-envelope"></i> contacto@wedevgt.com</a>
                             </li>
                         </ul>
                         <!-- <div class="social-network">

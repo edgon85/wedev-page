@@ -49,3 +49,9 @@
     border-color: #e6e9ed;
     color: #ffa800;
 }
+
+@media screen and (max-width: 823px) {
+    .header-top .container .info {
+        display: none;
+    }
+}

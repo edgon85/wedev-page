@@ -31,7 +31,7 @@ export class PortfolioDetailComponent implements OnInit {
     .subscribe(
       (data) => {
         this.portfolio = data;
-        console.log( this.portfolio );
+        // console.log( this.portfolio );
       }
     );
   }

@@ -17,7 +17,7 @@ export class PortfolioComponent implements OnInit {
                private router: Router ) {
     this._portolioService.getAllPortfolio().subscribe(
       (data) => {
-        console.log(data);
+        // console.log(data);
         this.portafolios = data;
       }
     );
