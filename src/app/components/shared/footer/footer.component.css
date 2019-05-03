@@ -1,14 +1,64 @@
-footer {
+.header-footer {
     font-size: 14px;
     line-height: 22px;
-}
-
-footer.dark-bg {
     color: #a3b1bf;
     background: #2f4052;
 }
 
-footer .inner {
+.header-footer .services h4,
+.header-footer .contacts h4,
+.header-footer .who-we-are h4 {
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.header-footer .services ul,
+.header-footer .contacts ul {
+    list-style: none;
+    color: #a3b1bf;
+}
+
+.header-footer .services ul li a,
+.header-footer .contacts ul li a {
+    color: #a3b1bf;
+    text-decoration: none;
+}
+
+.header-footer .who-we-are .logo-white {
+    width: 100%;
+}
+
+.header-footer .who-we-are .logo-white img {
+    width: 50%;
+    vertical-align: top;
+}
+
+.header-footer .footer-bottom {
+    background: #283645;
+    color: #707e8c;
+}
+
+.header-footer .footer-bottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header-footer .footer-bottom p {
+    color: #707e8c;
+    padding-left: 1em;
+    /* padding: 0;
+     margin: 0; */
+}
+
+
+/*
+footer.dark-bg {
+    color: #a3b1bf;
+    background: #2f4052;
+} */
+
+
+/* footer .inner {
     padding-top: 45px;
     padding-bottom: 35px;
 }
@@ -28,8 +78,8 @@ footer .row .inner a {
 }
 
 footer .logo {
-    height: auto;
     max-height: 100%;
+    height: auto;
 }
 
 footer h4 {
@@ -80,4 +130,4 @@ footer p {
 .footer-bottom p {
     padding: 0;
     margin: 0;
-}
+} */
