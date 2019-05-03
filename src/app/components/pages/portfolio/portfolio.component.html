@@ -2,37 +2,27 @@
     <div class="container">
         
         <div class="row">
-            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 animated fadeInDown">
                 <h1 class="gallery-title">Nuestro trabajo</h1>
                 <p class="cont text-center">
-                    Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes.
+                    Trabajamos para mejorar la competitividad de empresas y profesionales de cualquier sector de actividad
                 </p>
             </div>
         </div>
 
         <div class="row justify-content-center">
             <div align="center">
-                <button class="btn btn-default filter-button" data-filter="all">
-          Todos
-        </button>
-                <button class="btn btn-default filter-button" data-filter="web">
-          Web
-        </button>
-                <button class="btn btn-default filter-button" data-filter="social">
-          Social Media
-        </button>
-                <button class="btn btn-default filter-button" data-filter="apps">
-          Apps
-        </button>
-                <button class="btn btn-default filter-button" data-filter="photos">
-          Fotografia
-        </button>
+                <button class="btn btn-default filter-button animated fadeInLeft" data-filter="all">Todos</button>
+                <button class="btn btn-default filter-button animated fadeInLeft" data-filter="web">Web</button>
+                <button class="btn btn-default filter-button animated fadeInUp" data-filter="social">Social Media</button>
+                <button class="btn btn-default filter-button animated fadeInRight" data-filter="apps">Apps</button>
+                <button class="btn btn-default filter-button animated fadeInRight" data-filter="photos">Fotografia</button>
             </div>
         </div>
         
         <div class="row">
             <ng-container *ngFor="let item of portafolios">
-               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter {{item.filtro}} " >
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter {{item.filtro}} animated fadeIn" >
                 <figcaption class="text-overlay" (click)="detalle(item.slug)">
                     <div class="info">
                         <h4>{{item.title}}</h4>
@@ -42,108 +32,6 @@
                 <img [src]="item.cover || 'assets/images/portafolio/social01.jpg' || ''" />
             </div> 
             </ng-container>
-            
-            
-<!-- 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/social01.jpg" />
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter photos">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/photos01.png" />
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/social06.jpg" />
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/social02.jpg" />
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/social03.jpg" />
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/social04.jpg" />
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/social05.jpg" />
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter apps">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/photograph02.jpg" />
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter photos">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/photos02.png" />
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web">
-                <figcaption class="text-overlay">
-                    <div class="info">
-                        <h4>Nutrición</h4>
-                        <p>Fotografía</p>
-                    </div>
-                </figcaption>
-                <img src="assets/images/portafolio/web02.png" />
-            </div> -->
         </div>
 
     </div>
@@ -152,7 +40,7 @@
 <section class="clients">
     <div class="container inner">
         <div class="row">
-            <div class="col-lg-8 col-md-9 mx-auto text-center">
+            <div class="col-lg-8 col-md-9 mx-auto text-center animated fadeInDown">
                 <header>
                     <h1>Nuestros clientes</h1>
                     <p>
@@ -167,30 +55,44 @@
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <div class="contenido d-flex">
-                                <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="First slide" />
-                                <img class="d-block w-100" src="assets/images/clientes/2.jpg" alt="First slide" />
-                                <img class="d-block w-100" src="assets/images/clientes/3.jpg" alt="First slide" />
+                            <div class="contenido d-flex justify-content-between">
+                                <div class="logo-empresa">
+                                    <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="wedev" />
+                                </div>
+                                <div class="logo-empresa">
+                                        <img class="d-block w-100" src="assets/images/clientes/2.jpg" alt="wedev" />
+                                </div>
+                                <div class="logo-empresa">
+                                        <img class="d-block w-100" src="assets/images/clientes/3.jpg" alt="wedev" />
+                                </div>
+                                <!-- <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="wedev" />
+                                <img class="d-block w-100" src="assets/images/clientes/2.jpg" alt="wedev" />
+                                <img class="d-block w-100" src="assets/images/clientes/3.jpg" alt="wedev" /> -->
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="contenido d-flex">
-                                <img class="d-block w-100" src="assets/images/clientes/4.jpg" alt="Second slide" />
-                                <img class="d-block w-100" src="assets/images/clientes/5.jpg" alt="Second slide" />
-                                <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="Second slide" />
+                            <div class="contenido d-flex justify-content-between">
+                                    <div class="logo-empresa">
+                                            <img class="d-block w-100" src="assets/images/clientes/4.jpg" alt="wedev" />
+                                        </div>
+                                        <div class="logo-empresa">
+                                                <img class="d-block w-100" src="assets/images/clientes/5.jpg" alt="wedev" />
+                                        </div>
+                                        <div class="logo-empresa">
+                                                <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="wedev" />
+                                        </div>
+                                <!-- <img class="d-block w-100" src="assets/images/clientes/4.jpg" alt="wedev" />
+                                <img class="d-block w-100" src="assets/images/clientes/5.jpg" alt="wedev" />
+                                <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="wedev" /> -->
                             </div>
                         </div>
 
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <i class="fas fa-chevron-left"></i>
-                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                        <!-- <span class="sr-only">Previous</span> -->
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                         <i class="fas fa-chevron-right"></i>
-                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                        <!-- <span class="sr-only">Next</span> -->
                     </a>
                 </div>
             </div>

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PortfolioServiceService } from '../../../services/portfolio-service.service';
-import { async } from '@angular/core/testing';
+
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-portfolio-detail',
@@ -12,7 +13,7 @@ export class PortfolioDetailComponent implements OnInit {
 
   portfolio: any = {};
 
-  constructor( private route: ActivatedRoute,
+  constructor( public sanitizer: DomSanitizer, private route: ActivatedRoute,
                private _portfolioService: PortfolioServiceService) {
     this.route.params.subscribe(
       (params) => {

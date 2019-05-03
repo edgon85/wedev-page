@@ -2,35 +2,46 @@
     <div class="container inner-top-md">
         <div class="row">
             <div class="col-lg-8 ">
-                <div class="container-fluid">
-                    <div class="card-columns">
-                        <ng-container *ngFor="let item of portfolio.images | keys;">
-                            <div class="card">
-                                    <img class="img-fluid" [src]="portfolio.images[item]" alt="Card image top">
-                            </div>
-                        </ng-container>
-                    
+                <div class="row mb-3" *ngIf="portfolio.videoUrl">
+                    <div class="col-12">
+                        <div class="video-container">
+                            <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(portfolio.videoCode + "?autoplay=1&loop=1?title=1&amp;byline=0&amp;portrait=0&amp;color=ffffff")' webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0"></iframe>
+                        </div>
+                        
                     </div>
                 </div>
-                <!-- <ng-container *ngFor="let item of portfolio.images | keys;">
-                <div class="class">
-                        <img [src]="portfolio.images[item]" alt="" width="300">
+                <div class="row" *ngIf="portfolio.imageWeb">
+                    <div class="col-12 mb-3">
+                        <div class="image-container">
+                            <img [src]="portfolio.imageWeb" alt="wedev">
+                        </div>
                     </div>
-                </ng-container> -->
+                </div>
+                <div class="row">
+                    <div class="container-fluid ">
+                        <div class="card-columns animated fadeInLeft">
+                            <ng-container *ngFor="let item of portfolio.images | keys;">
+                                <div class="card animated fadeIn">
+                                    <img class="img-fluid animated fadeIn" [src]="portfolio.images[item]" alt="wedev">
+                                </div>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-4 inner-left-sm">
                 <header>
-                    <h2>{{ portfolio.title }}</h2>
-                    <p class="text-small">
+                    <h2 class="animated fadeInDown">{{ portfolio.title }}</h2>
+                    <p class="text-small animated fadeInDown">
                         {{ portfolio.detail }}
                     </p>
-                    <ul class="item-details inner-top-xs outer-top-xs border-top">
+                    <ul class="item-details inner-top-xs outer-top-xs border-top animated fadeInRight">
                         <li><i class="far fa-calendar-alt mr-2"></i>{{ portfolio.date }}</li>
                         <li><i class="fas fa-tags mr-2"></i>{{ portfolio.category }}</li>
                         <li><i class="fas fa-user mr-2"></i>{{ portfolio.title }}</li>
                         <li>
                             <i class="fas fa-globe-americas mr-2"></i>
-                            <a href="{{ portfolio.url }}">{{ portfolio.url }}</a>
+                            <a target="_blank" href="{{ portfolio.url }}">{{ portfolio.urlName }}</a>
                         </li>
                     </ul>
                 </header>

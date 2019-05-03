@@ -134,8 +134,16 @@
     line-height: 150%;
 }
 
+/* .clients .inner .carousel .carousel-inne .carousel-item .contenido .logo-empresa{
+    width: 100%;
+    background: red;
+} */
+
+
 .clients .inner .carousel .carousel-control-prev .fas,
 .clients .inner .carousel .carousel-control-next .fas {
     color: #506a85;
     font-size: 36px;
 }
+
+

@@ -60,7 +60,7 @@
 
 .main .carousel .carousel-item .carousel-caption p {
     color: rgb(145, 145, 145) !important;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 
