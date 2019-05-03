@@ -5,9 +5,9 @@
                 <div class="row mb-3" *ngIf="portfolio.videoUrl">
                     <div class="col-12">
                         <div class="video-container">
-                            <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(portfolio.videoCode + "?autoplay=1&loop=1?title=1&amp;byline=0&amp;portrait=0&amp;color=ffffff")' webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0"></iframe>
+                            <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(portfolio.videoUrl + "?autoplay=1&loop=1?title=1&amp;byline=0&amp;portrait=0&amp;color=ffffff")' webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0"></iframe>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="row" *ngIf="portfolio.imageWeb">
