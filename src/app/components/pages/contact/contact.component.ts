@@ -14,12 +14,18 @@ export class ContactComponent implements OnInit {
     name: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
+    timestamp: ''
   };
 
   forma: FormGroup;
+  date: any;
 
   constructor(private _messageService: PortfolioServiceService) {
+
+
+    this.date = new Date();
+
     this.forma = new FormGroup({
       name: new FormControl('', Validators.required),
       email: new FormControl('', [
@@ -27,17 +33,19 @@ export class ContactComponent implements OnInit {
         Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$')
       ]),
       subject: new FormControl('', Validators.required),
-      message: new FormControl('', Validators.required)
+      message: new FormControl('', Validators.required),
+      timestamp: new FormControl('' + this.date)
     });
   }
 
   ngOnInit() {}
 
   sendMessage() {
+    // console.log(this.forma.value);
     this._messageService
       .newMessageContact(this.forma.value)
       .then(() => {
-        console.log('Creado exitosamente');
+        // console.log('Creado exitosamente');
         swal(
           'Mensaje enviado',
           'Pronto estaremos en contacto con usted!',
@@ -48,7 +56,8 @@ export class ContactComponent implements OnInit {
             name: '',
             email: '',
             subject: '',
-            message: ''
+            message: '',
+            timestamp: ''
           }
         });
       })
