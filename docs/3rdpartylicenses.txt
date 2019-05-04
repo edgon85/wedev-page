@@ -373,6 +373,9 @@ MIT
 
 firebase/firestore
 
+@angular/forms
+MIT
+
 zone.js
 MIT
 The MIT License
