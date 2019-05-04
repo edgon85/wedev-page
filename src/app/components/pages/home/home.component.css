@@ -40,31 +40,18 @@
     padding-bottom: 20px;
 }
 
-.main .carousel .carousel-caption h2 {
+.main .carousel .carousel-caption h1 {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 60px;
-}
-
-.main .carousel .carousel-caption p {
-    font-size: 22px;
-    margin-top: 17px;
-    color: #a3b1bf;
-    font-weight: 400;
-}
-
-.main .carousel .carousel-item .carousel-caption h1 {
     color: #fff !important;
-    text-transform: uppercase;
 }
 
 .main .carousel .carousel-item .carousel-caption p {
     color: rgb(145, 145, 145) !important;
     font-size: 22px;
-    /* margin-top: 17px; */
     font-weight: 400;
     margin-bottom: 50px;
-    /* text-transform: uppercase; */
 }
 
 
