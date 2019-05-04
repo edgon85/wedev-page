@@ -13,28 +13,39 @@
                 <div class="row">
                     <div class="col-md-6 outer-top-md inner-right-sm animated fadeInLeft">
                         <h2>Deje un mensaje</h2>
-                        <form class="forms">
+                        <form ngNativeValidate class="forms" [formGroup]="forma" (ngSubmit)="sendMessage()">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="nombre (requerido)" required/>
+                                    <input formControlName="name" type="text" name="name" class="form-control" placeholder="nombre (requerido)" required/>
                                 </div>
+                                <!-- <div *ngIf="forma.get('name').errors && forma.get('name').touched">
+                                    <p class="required" *ngIf="forma.get('name').hasError('required')"> * nombre es requerido</p>
+                                </div> -->
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="email" name="email" class="form-control" placeholder="correo (requerido)" required/>
+                                    <input formControlName="email" type="email" name="email" class="form-control" placeholder="correo (requerido)" required/>
                                 </div>
+                                <!-- <div *ngIf="forma.get('email').errors && forma.get('email').touched && forma.get('email').invalid ">
+                                    <p class="required" *ngIf="forma.get('email').hasError('required')"> * nombre es requerido</p>
+                                </div> -->
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" name="subject" class="form-control" placeholder="Asunto" />
+                                    <input formControlName="subject" type="text" name="subject" class="form-control" placeholder="Asunto" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <textarea name="message" class="form-control" placeholder="Ingrese un mensaje ..."></textarea>
+                                    <textarea formControlName="message" name="message" class="form-control" placeholder="Ingrese un mensaje ..." required></textarea>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-submit" (click)="sendInfo()"> Enviar mesaje </button>
+
+                            <div *ngIf="forma.get('name').errors && forma.get('name').touched">
+                                <p *ngIf="forma.get('name').hasError('required')">Campo requerido</p>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit"> Enviar mesaje </button>
                         </form>
                         <div id="response"></div>
                     </div>

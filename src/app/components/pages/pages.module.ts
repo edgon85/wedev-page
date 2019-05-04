@@ -11,6 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioDetailComponent } from './portfolio/portfolio-detail.component';
 import { KeysPipe } from '../../pipes/keys.pipe';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -25,7 +27,9 @@ import { KeysPipe } from '../../pipes/keys.pipe';
   imports: [
     SharedModule,
     PAGES_ROUTES,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     PagesComponent,

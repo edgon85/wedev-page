@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import { Message } from '../interfaces/contactmessage';
 
 @Injectable({
   providedIn: 'root'
@@ -23,5 +24,10 @@ export class PortfolioServiceService {
   getOnePortfolio(slug: string) {
     this.itemDocument = this.afs.doc('portafolio/' + slug);
     return this.portfolio = this.itemDocument.valueChanges();
+  }
+
+
+  newMessageContact( message: Message ) {
+    return this.afs.collection('messages').add(message);
   }
 }
