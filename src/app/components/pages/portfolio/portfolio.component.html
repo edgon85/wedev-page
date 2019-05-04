@@ -1,6 +1,6 @@
 <section class="light-bg">
     <div class="container">
-        
+
         <div class="row">
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 animated fadeInDown">
                 <h1 class="gallery-title">Nuestro trabajo</h1>
@@ -19,18 +19,18 @@
                 <button class="btn btn-default filter-button animated fadeInRight" data-filter="photos">Fotografia</button>
             </div>
         </div>
-        
+
         <div class="row">
             <ng-container *ngFor="let item of portafolios">
-               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter {{item.filtro}} animated fadeIn" >
-                <figcaption class="text-overlay" (click)="detalle(item.slug)">
-                    <div class="info">
-                        <h4>{{item.title}}</h4>
-                        <p>{{item.category}}</p>
-                    </div>
-                </figcaption>
-                <img [src]="item.cover || 'assets/images/portafolio/social01.jpg' || ''" />
-            </div> 
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter {{item.filtro}} animated fadeIn">
+                    <figcaption class="text-overlay" (click)="detalle(item.slug)">
+                        <div class="info">
+                            <h4>{{item.title}}</h4>
+                            <p>{{item.category}}</p>
+                        </div>
+                    </figcaption>
+                    <img [src]="item.cover || 'assets/images/portafolio/social01.jpg' || ''" />
+                </div>
             </ng-container>
         </div>
 
@@ -44,7 +44,7 @@
                 <header>
                     <h1>Nuestros clientes</h1>
                     <p>
-                        Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes.
+                        Siempre con compromiso, entrega y disponibilidad con cada empresario con el que trabajamos
                     </p>
                 </header>
             </div>
@@ -60,10 +60,13 @@
                                     <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="wedev" />
                                 </div>
                                 <div class="logo-empresa">
-                                        <img class="d-block w-100" src="assets/images/clientes/2.jpg" alt="wedev" />
+                                    <img class="d-block w-100" src="assets/images/clientes/2.jpg" alt="wedev" />
                                 </div>
                                 <div class="logo-empresa">
-                                        <img class="d-block w-100" src="assets/images/clientes/3.jpg" alt="wedev" />
+                                    <img class="d-block w-100" src="assets/images/clientes/3.jpg" alt="wedev" />
+                                </div>
+                                <div class="logo-empresa">
+                                    <img class="d-block w-100" src="assets/images/clientes/7.jpg" alt="wedev" />
                                 </div>
                                 <!-- <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="wedev" />
                                 <img class="d-block w-100" src="assets/images/clientes/2.jpg" alt="wedev" />
@@ -72,15 +75,18 @@
                         </div>
                         <div class="carousel-item">
                             <div class="contenido d-flex justify-content-between">
-                                    <div class="logo-empresa">
-                                            <img class="d-block w-100" src="assets/images/clientes/4.jpg" alt="wedev" />
-                                        </div>
-                                        <div class="logo-empresa">
-                                                <img class="d-block w-100" src="assets/images/clientes/5.jpg" alt="wedev" />
-                                        </div>
-                                        <div class="logo-empresa">
-                                                <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="wedev" />
-                                        </div>
+                                <div class="logo-empresa">
+                                    <img class="d-block w-100" src="assets/images/clientes/4.jpg" alt="wedev" />
+                                </div>
+                                <div class="logo-empresa">
+                                    <img class="d-block w-100" src="assets/images/clientes/5.jpg" alt="wedev" />
+                                </div>
+                                <div class="logo-empresa">
+                                    <img class="d-block w-100" src="assets/images/clientes/6.jpg" alt="wedev" />
+                                </div>
+                                <div class="logo-empresa">
+                                    <img class="d-block w-100" src="assets/images/clientes/8.jpg" alt="wedev" />
+                                </div>
                                 <!-- <img class="d-block w-100" src="assets/images/clientes/4.jpg" alt="wedev" />
                                 <img class="d-block w-100" src="assets/images/clientes/5.jpg" alt="wedev" />
                                 <img class="d-block w-100" src="assets/images/clientes/1.jpg" alt="wedev" /> -->
